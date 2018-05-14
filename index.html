@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 23</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <section >
+        <div class="row">
+            <div class="container" id="header">
+                <div class="col-3"></div>
+                <div class="col-9"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="container">
+                <div class="col-12" id="menu">
+                    <nav>
+                        <ul id="menuUl">
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">About</a> </li>
+                            <li><a href="#">Contact</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="row">
+            <div class="container" id="content">
+                <div class="col-3">
+                    <p>Regular Expression, Set of Library </p>
+                    <p>*Runtime form validation</p>
+                    <p>Action a file location.. or url</p>
+                    <p>Different between get/psot method</p>
+                </div>
+                <div class="col-9">
+
+                    <form id="form" action="" method="post">
+                        <table class="table-1">
+                            <tr>
+                                <td>First Name</td>
+                                <td>
+                                    <input type="text" id="firstName">
+                                    <span id="firstNameError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td>
+                                    <input type="text" id="lastName">
+                                    <span id="lastNameError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email Address</td>
+                                <td>
+                                    <input type="text" id="emailAddress">
+                                    <span id="emailAddressError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <span id="passwordError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>
+                                    <input type="password" id="password">
+                                    <input type="checkbox" id="showHide">Show Password
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <span id="confirmPasswordError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password</td>
+                                <td>
+                                    <input type="password" id="confirmPassword">
+                                    <input type="checkbox" id="showHide">Show Password
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gender Info</td>
+                                <td>
+                                    <input type="radio" name="gender" value="male">Male
+                                    <input type="radio" name="gender" value="female">Female
+                                    <span id="genderError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>District Name</td>
+                                <td>
+                                    <select id="district">
+                                        <option value=" ">--Select District</option>
+                                        <option value="Dhaka">Dhaka</option>
+                                        <option value="Savar">Savar</option>
+                                        <option value="Dohar">Dohar</option>
+                                        <option value="Gazipur">Gazipur</option>
+                                    </select>
+                                    <span id="districtError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" name="submitBtn" id="submitBtn" value="Submit">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="row">
+            <div class="container" id="footer">
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<script src=jquery-3.3.1.js></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
