@@ -45,7 +45,7 @@ function checkPassword() {
         $('#passwordError').text(' ')
         return true;
     } else {
-        $('#passwordError').text('* password formate is invalid')
+        $('#passwordError').text('* You must enter a password')
         return false;
     }
 };
@@ -61,12 +61,20 @@ function checkConfirmPassword() {
     }
 };
 
-$('#showHide').click(function () {
+$('#showHidePassword').click(function () {
     var attrValue = $('#password').attr('type');
     if(attrValue == 'password') {
         $('#password').attr('type', 'text');
     } else {
         $('#password').attr('type', 'password');
+    }
+});
+$('#showHideConfirmPassword').click(function () {
+    var attrValue = $('#confirmPassword').attr('type');
+    if(attrValue == 'password') {
+        $('#confirmPassword').attr('type', 'text');
+    } else {
+        $('#confirmPassword').attr('type', 'password');
     }
 });
 
@@ -112,10 +120,17 @@ $('#lastName').keyup(function () {
 $('#emailAddress').keyup(function () {
     checkEmailAddress();
 });
+$('#password').blur(function () {
+    checkPassword();
+});
 
 $('#password').keyup(function () {
     checkPassword();
 });
+$('#password').click(function () {
+    $('#passwordError').text('Password must contain 8 characters, small letter, capital letter, symble and number.');
+});
+
 
 $('#confirmPassword').blur(function () {
     checkConfirmPassword();
@@ -126,7 +141,7 @@ $('#confirmPassword').keyup(function () {
 });
 
 $('#confirmPassword').click(function () {
-    $('#confirmPasswordError').text('password should be same');
+    $('#confirmPasswordError').text('Password should be same');
 });
 
 
