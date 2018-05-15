@@ -128,7 +128,7 @@ $('#password').keyup(function () {
     checkPassword();
 });
 $('#password').click(function () {
-    $('#passwordError').text('Password must contain 8 characters, small letter, capital letter, symble and number.');
+    $('#passwordError').text('Password must contain minimum 8 characters, small letter, capital letter, symble and number.');
 });
 
 
